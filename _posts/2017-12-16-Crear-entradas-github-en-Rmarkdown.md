@@ -1,9 +1,3 @@
-Crear entradas para nuestro sitio github en Rmarkdown
-================
-
-Crear entradas para nuestro stio web en Rmarkdown
--------------------------------------------------
-
 Al entrar a R crear un nuevo doocumento File--&gt;New File--&gt;Rmarkdown
 
 ![Tipo](https://i.imgur.com/L2eJN3r.png)
