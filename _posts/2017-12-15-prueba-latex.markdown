@@ -25,6 +25,7 @@ Otras formulas
 <p><span class="math inline">\(\Box\diamond p\equiv\diamond p\)</span></p>
 <p><span class="math inline">\(\int_{0}^{1} x dx = \left[ \frac{1}{2}x^2 \right]_{0}^{1} = \frac{1}{2}\)</span></p>
 <p><span class="math inline">\(e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = \lim_{n\rightarrow\infty} (1+x/n)^n\)</span></p>
+$$ a^2 + b^2 = c^2$$
 
 
 Formula prueba
