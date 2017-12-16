@@ -45,6 +45,6 @@ Para embeber plots
 plot(pressure)
 ```
 
-![](2017-12-16-Crear-entradas-github-en-Rmarkdown_files/figure-markdown_github-ascii_identifiers/pressure-1.png)
+![](./2017-12-16-Crear-entradas-github-en-Rmarkdown_files/figure-markdown_github-ascii_identifiers/pressure-1.png)
 
 usando echo=FALSE podemos omitir el mostrar el codigo de R y solo mostrar la salida
