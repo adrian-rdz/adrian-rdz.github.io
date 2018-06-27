@@ -1,8 +1,10 @@
+---
 title: "Prueba Latex changed"
 date: 2017-12-15
 tags: [prueba,latex]
 excerpt: "Data Science"
 mathjax: "true"
+---
 
 ##Prueba Latex 
 
