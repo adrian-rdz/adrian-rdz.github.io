@@ -15,12 +15,12 @@ Solo fue pegar el CDN, al igual que como todos usamos jquery, es raro que alguie
 
 
 Formula prueba
-\\(H\_0: \mu\_{A} = \mu\_{B}\\)
+$$(H\_0: \mu\_{A} = \mu\_{B})$$
 
 Aproximación de Leibiniz para PI
-\\(4*\sum_{i=1}^n \frac{(-1^n)}{2n+1}\\)
+$$4*\sum_{i=1}^n \frac{(-1^n)}{2n+1}$$
 
-\\( \sum _{n=0}^{\infty }\,{\frac {(-1)^{n}}{2n+1}}\;=\;{\frac {\pi }{4}}.\\)
+$$( \sum _{n=0}^{\infty }\,{\frac {(-1)^{n}}{2n+1}}\;=\;{\frac {\pi }{4}}.$$
 
 Otras formulas
 <p><span class="math inline">\(a^2 + b^2 = c^2\)</span></p>
