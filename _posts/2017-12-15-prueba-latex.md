@@ -1,3 +1,9 @@
+title: "Prueba Latex changed"
+date: 2017-12-15
+tags: [prueba,latex]
+excerpt: "Data Science"
+mathjax: "true"
+
 ##Prueba Latex 
 
 Al final se dan varias opciones y la que vi al principio pues no fue la que termine usando, encontré una mas fácil.
