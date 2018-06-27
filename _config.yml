@@ -103,7 +103,7 @@ author:
   name             : "Adrian Alejandro Rodriguez Villarreal"
   avatar           : /images/AdrianRodriguez.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Estudiante de Maestria en Computo Estadistico"
-  location         : "Monterrey NL, México"
+  location         : "Monterrey NL, Mexico"
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
