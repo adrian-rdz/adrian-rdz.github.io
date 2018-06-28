@@ -6,7 +6,7 @@ excerpt: "Data Science"
 mathjax: "true"
 ---
 
-Como se explica en el video siguiente https://www.youtube.com/watch?v=qWrcgHwSG8M, se puede usar codigo latex facilmente con este template solo agregando la libreria mathjax
+Como se explica en el video siguiente [https://www.youtube.com/watch?v=qWrcgHwSG8M](https://www.youtube.com/watch?v=qWrcgHwSG8M), se puede usar codigo latex facilmente con este template solo agregando la libreria mathjax
 
 Solo hay que agregar este codigo en un archivo de configuracion para que siempre se precargue la libreria
 
@@ -47,4 +47,4 @@ Referencias:
 
  - [https://www.mathjax.org/](https://www.mathjax.org/)
 
- - [http://blog.mollywhite.net/how-to-display-mathematical-equations-in-ghost/](http://blog.mollywhite.net/how-to-display-mathematical-equations-in-ghost/)
+ - [https://www.youtube.com/watch?v=qWrcgHwSG8M](https://www.youtube.com/watch?v=qWrcgHwSG8M)
