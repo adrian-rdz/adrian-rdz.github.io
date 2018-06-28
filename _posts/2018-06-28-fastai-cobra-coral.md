@@ -1,8 +1,4 @@
 
-## Image classification with Convolutional Neural Networks
-
-Welcome to the first week of the second deep learning certificate! We're going to use convolutional neural networks (CNNs) to allow our computer to see - something that is only possible thanks to deep learning.
-
 ## Reusando modelo resnet para clasificar cobras y viboras coralillo
 
 Para reutilizar el codigo usado en la primera lección de fastai, se toma en cuenta que el modelo preentrenado resnet34, puede ser usado para clasificar objetos similares (tamaño y forma), y sin tener que gastar tiempo de entrenamiento, podemos solo reentrenar una capa adicional.
