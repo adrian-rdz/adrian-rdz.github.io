@@ -1,8 +1,6 @@
 ---
 title: "About"
 permalink: /about/
-header:
-  image: "/images/AdrianRodriguez.jpg"
 ---
 
 Estudiante de la maestría en Computo Estadistico impartida en el Centro de Investigación en Matematicas Unidad Monterrey (CIMAT), previamente a ingresar a esta maestria trabajé durante 5 
