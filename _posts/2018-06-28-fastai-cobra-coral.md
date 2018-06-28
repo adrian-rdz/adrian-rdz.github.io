@@ -131,7 +131,7 @@ plt.imshow(img);
 ```
 
 
-![png](output_19_0.png)
+![png]("/images/output_19_0.png")
 
 
 Here is how the raw data looks like
