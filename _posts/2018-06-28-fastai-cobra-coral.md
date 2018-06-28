@@ -356,7 +356,7 @@ plot_val_with_title(rand_by_correct(True), "Correctly classified")
 
 
 
-![png](output_39_1.png)
+![png](/images/output_39_1.png)
 
 
 
@@ -411,7 +411,7 @@ plot_val_with_title(most_by_correct(0, True), "Most correct cobra")
 
 
 
-![png](output_42_1.png)
+![png](/images/output_42_1.png)
 
 
 
@@ -423,7 +423,7 @@ plot_val_with_title(most_by_correct(1, True), "Most correct coral")
 
 
 
-![png](output_43_1.png)
+![png](/images/output_43_1.png)
 
 
 
@@ -460,7 +460,7 @@ plot_val_with_title(most_uncertain, "Most uncertain predictions")
 
 
 
-![png](output_46_1.png)
+![png](/images/output_46_1.png)
 
 
 
@@ -481,5 +481,5 @@ plot_confusion_matrix(cm, data.classes)
 
 
 
-![png](output_49_1.png)
+![png](/images/output_49_1.png)
 
