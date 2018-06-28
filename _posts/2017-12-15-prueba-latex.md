@@ -6,14 +6,19 @@ excerpt: "Data Science"
 mathjax: "true"
 ---
 
-##Prueba Latex 
+Como se explica en el video siguiente https://www.youtube.com/watch?v=qWrcgHwSG8M, se puede usar codigo latex facilmente con este template solo agregando la libreria mathjax
 
-Al final se dan varias opciones y la que vi al principio pues no fue la que termine usando, encontré una mas fácil.
+Solo hay que agregar este codigo en un archivo de configuracion para que siempre se precargue la libreria
 
-[Solucion usando inyección de codigo](http://academy.ghost.org/adding-mathjax-to-your-ghost-blog/)
+```javascript
+{% if page.mathjax %}
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+{% endif %}
+```
 
-Solo fue pegar el CDN, al igual que como todos usamos jquery, es raro que alguien lo aloje en su servidor, por lo general desde un cdn se manda llamar, muchas veces es mas rapido, pero ya depende de gustos porque si llega a morir por un momento el servicio pues no funcionara la librería, pero confio mas en cloudfare que en mi internet.
-
+### Pruebas Latex
 
 
 Formula prueba
@@ -33,18 +38,8 @@ Otras formulas
 <p><span class="math inline">\(\Box\diamond p\equiv\diamond p\)</span></p>
 <p><span class="math inline">\(\int_{0}^{1} x dx = \left[ \frac{1}{2}x^2 \right]_{0}^{1} = \frac{1}{2}\)</span></p>
 <p><span class="math inline">\(e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = \lim_{n\rightarrow\infty} (1+x/n)^n\)</span></p>
-$$ a^2 + b^2 = c^2$$
 
 
-Formula prueba
-`\(H\_0: \mu\_{A} = \mu\_{B}\)`
-
-Aproximación de Leibiniz para PI
-`\(4*\sum_{i=1}^n \frac{(-1^n)}{2n+1}\)`
-
-`\( \sum _{n=0}^{\infty }\,{\frac {(-1)^{n}}{2n+1}}\;=\;{\frac {\pi }{4}}.\)`
-
-es muy engorroso, me tomo mucho tiempo para que me funcionara el codigo, hay que agregar escapeos con slash y encerrar la formula entre parentesis sino no la pela la librería.
 
 Referencias:
 
