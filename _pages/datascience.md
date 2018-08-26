@@ -4,7 +4,7 @@ permalink: /datascience/
 title: "Posts de Ciencia de Datos"
 author_profile: true
 header:
- image: "/images/AdrianRodriguez.jpg"
+ image: "/images/DataSaurus.gif"
 ---
 
 {% include base_path %}
