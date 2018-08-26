@@ -14,7 +14,7 @@ Si en tu caso te decantas mas por el lenguaje de programación R, podras sacarle
 
 ![img](https://i.imgur.com/KxDSBHe.png)
 
-En adelante describire el proceso para lograr un ambiente de R partiendo de una imagen Rocker (Verse) y despues agregare paquetes extras los cuales requiero para NLP (coreNLP cleanNLP etc), cabe mencionar que este paso ultimo hay mejores maneras de realizarlo pero implica igual hacerlo a mano al menos una vez o ser muy crack para lograr un dockerfile con todos los parametros y comandos necesarios para hacer postinstalaciones de librerias y programas denntro de la instancia docker.
+En adelante describire el proceso para lograr un ambiente de R partiendo de una imagen Rocker (Verse) y despues agregare paquetes extras los cuales requiero para NLP (coreNLP cleanNLP etc), cabe mencionar que este paso ultimo hay mejores maneras de realizarlo pero implica igual hacerlo a mano al menos una vez o ser muy crack para lograr un dockerfile con todos los parametros y comandos necesarios para hacer postinstalaciones de librerias y programas dentro de la instancia docker.
 
 ### Proceso de Creacion de Ambiente para (NLP usando R)
 
@@ -101,12 +101,18 @@ A simple vista parece ser mas desmadroso que instalar directo en tu maquina pero
 
 1. El tema de la seguridad es algo que hay que tener en mente, dado que exponemos puertos, y dado que las instancias docker contiene versiones de sistema operativo muy minimizadas, podria pensarse que carecen de ciertas librerias o medidas de seguridad, para esto hay guias, pero minimo hay que tener sentido comun y usar buenos passwords, y si vas a e exponer puertos no exponenrlos a internet haciendo portforwarding, y las cosas basicas.
 
+#### Notas
+
+Hay muchas cosas que se pueden hacer con Docker crear clusters de instancias (swarm, kubernetes) administrar redes en instancias, hay guis o gestores de instancias como rancher o portainer, existe un amplia variedad de subheramientas que pueden mejorar y acelerar el deploy de ambientes basta con ponerse a ver guias y tutoriales para mejorar el proceso de generar ambientes, en las referencias dejo una guia.
+
 ## Referencias
 
-https://github.com/rocker-org/rocker
+[https://github.com/rocker-org/rocker](https://github.com/rocker-org/rocker)
 
-https://hub.docker.com/
+[https://hub.docker.com/](https://hub.docker.com/)
 
-https://hub.docker.com/r/rocker/verse/
+[https://hub.docker.com/r/rocker/verse/](https://hub.docker.com/r/rocker/verse/)
 
-https://journal.r-project.org/archive/2017/RJ-2017-065/RJ-2017-065.pdf
+[https://journal.r-project.org/archive/2017/RJ-2017-065/RJ-2017-065.pdf](https://journal.r-project.org/archive/2017/RJ-2017-065/RJ-2017-065.pdf)
+
+[https://docker-curriculum.com/](https://docker-curriculum.com/)
