@@ -1,8 +1,8 @@
 ---
 title: "POS tagging usando HMM y Viterbi Decoding"
 date: 2018-12-15
-tags: [general,estadistica,computacion]
-excerpt: "Computo Estadistico,NLP,GIS,Imagenes,MCMC,Bootstrap,Proyectos"
+tags: [NLP,HMM,R]
+excerpt: "NLP - POS taggeo usando Modelo HMM y Viterbi Decoding para deducir tags de palabras"
 mathjax: "true"
 ---
 
