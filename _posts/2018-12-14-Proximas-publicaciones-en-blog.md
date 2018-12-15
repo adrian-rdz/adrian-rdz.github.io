@@ -6,13 +6,13 @@ excerpt: "Computo Estadistico,NLP,GIS,Imagenes,MCMC,Bootstrap,Proyectos"
 mathjax: "true"
 ---
 
-## Proximas publicaciones 
+## Próximas publicaciones 
 
 Voy terminando el 3er semestre en la maestría y he aprendido de temas muy variados, ha sido una tarea tras otra y un proyecto tras otro,
 
-Ahora que eestoy de vacaciones planeo ir haciendo la bitacora de lo ya generado en el semestre que finalizo para tenerlo de un modo mas facil de consultar y no se pierda en mi disco duro.
+Ahora que estoy de vacaciones planeo ir haciendo la bitacora de lo ya generado en el semestre que finalizo, para tenerlo de un modo mas facil de consultar y no se pierda en mi disco duro.
 
-Algunos de los temas vistos en la maestria el semestre pasado se encuentra:
+Algunos de los temas vistos en la maestria el semestre pasado:
 
 - Computo Estadistico (EM,MCMC, Bootstrap. Imputacion Estadistica (Simple, Multiple), Modelos Lineales Generalizados, Validacion Cruzada, Metodos de Regularización (Lasso, Ridge), Regresion-PCA, PLS, etc.... )
 - Procesamiento de Lenguaje Natural (NLP)
@@ -21,7 +21,7 @@ Algunos de los temas vistos en la maestria el semestre pasado se encuentra:
 - Series de tiempo (Descomposicion de serie de tiempo en compónentes, modelos AR MA ARMA ARIMA, VAR, Forecasting, Cointegracion, Funciones Respuesta-Impulso, Granger Causality, etc...)
 - Metodos de Teoria de Matrices Aleatorias (Marchenko Pastur, Ensembles GOE GUE GSE, Tracy Widom Distr. etc...)
 
-Dado que la canitidad de temas e información vista fue inmensa tratare de recuperar a manera de log, los temas y actividades que fueron mas de mi interes, por lo que me hice una lista de lo que planeo ir publicando en este blog poco a poco durante las vacaciones
+Dado que la canitidad de temas e información vista fue inmensa tratare de recuperar a manera de log, los temas y actividades que fueron mas de mi interes, por lo que me hice una lista de lo que planeo ir publicando en este blog poco a poco durante las vacaciones, de la lista solo lo que esta etiquetado como técnico son cosas que aprendi por mi cuenta pero igual me sirvieron para la maestría.
 
 ### Lista de proximas publicaciones en blog:
 
