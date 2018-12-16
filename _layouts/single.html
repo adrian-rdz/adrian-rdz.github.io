@@ -68,9 +68,9 @@ layout: default
     {% endif %}
   </article>
 <!--Agregado para meter comentarios en el layout de una pagina de articulo -->
-  {% if site.disqus_shortname %}
+ <!-- {% if site.disqus_shortname %} -->
   	{% include disqus_comments.html %}
-  {% endif %}	
+<!--  {% endif %} -->
 
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
