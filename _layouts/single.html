@@ -69,8 +69,22 @@ layout: default
   </article>
 <!--Agregado para meter comentarios en el layout de una pagina de articulo -->
  <!-- {% if site.disqus_shortname %} -->
-  	{% include disqus_comments.html %}
 <!--  {% endif %} -->
+{% include disqus_comments.html %}
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname  = 'https://https-adrian-rdz-github-io';
+  var disqus_identifier = '{{ page.url }}';
+
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
 
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
