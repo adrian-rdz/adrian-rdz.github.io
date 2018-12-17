@@ -20,12 +20,12 @@ mas teoria importante se puede ver en http://sebastianraschka.com/Articles/2014_
 
 **Teorema/Regla de Bayes**
 
-$$P(c|x) = \frac{P(x|c)P(c)}{P(x)}$$
+$$P(c \mid x) = \frac{P(x|c)P(c)}{P(x)}$$
 
 Donde 
 
-* $$P(c|x)$$ es la probabilidad a posteriori
-* $$P(x|c)$$ el Likelihood
+* $$P(c \mid x)​$$ es la probabilidad a posteriori
+* $$P(x \mid c)$$ el Likelihood
 * $$P(c)$$ es la probabilidad a priori de la clase (las suposiciones o evidencias que tenemos (se puede basar en proporciones y conteos a partir de los datos que tenemos disponibles))
 * $$P(x)$$ probabilidad a priori del predictor
 
