@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Adrian Rodríguez - blog"
+title                    : "Adrián Rodríguez - blog"
 title_separator          : "-"
 name                     : "Adrián Alejandro Rodríguez Villarreal"
 description              : "Experiencias en Data Science, Linux y mas"
