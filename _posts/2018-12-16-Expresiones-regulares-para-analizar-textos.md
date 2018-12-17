@@ -27,7 +27,7 @@ A continuación muestro algunas de las cosas que se pueden hacer con expresiones
 Texto que se estara analizando
 
 ```bash
-adrianrdzv@adrianrdzv-Lenovo-ideapad-Y700-17ISK:~/Descargas$ cat scrap.txt 
+:~/Descargas$ cat scrap.txt 
 Diario de Xalapa
 
 Por los delitos de robo y secuestro, fincan responsabilidad a dos personas
@@ -46,7 +46,7 @@ Los datos de prueba aportados por el agente del Ministerio Público de la Procur
 Buscar linea que contiene la palabra fiscal
 
 ```
-adrianrdzv@adrianrdzv-Lenovo-ideapad-Y700-17ISK:~/Descargas$ cat scrap.txt | grep "fiscal"
+:~/Descargas$ cat scrap.txt | grep "fiscal"
  El fiscal de la federación solicitó audiencia ante el Juez de Control, quien calificó de legal la detención, dictó auto de vinculación a proceso y estableció como medida cautelar prisión preventiva oficiosa, por lo que los hoy imputados fueron recluidos en el Centro Federal de Readaptación Social 5 Oriente, en Villa Aldama, Veracruz. El juzgador fijó un plazo de tres meses para el cierre de la investigación complementaria.
 
 
@@ -55,7 +55,7 @@ adrianrdzv@adrianrdzv-Lenovo-ideapad-Y700-17ISK:~/Descargas$ cat scrap.txt | gre
 Buscar lineas que contienen la palabra octubre
 
 ```
-adrianrdzv@adrianrdzv-Lenovo-ideapad-Y700-17ISK:~/Descargas$ cat scrap.txt | grep "octubre"
+:~/Descargas$ cat scrap.txt | grep "octubre"
 2 de octubre de 2018
 
 
@@ -82,7 +82,7 @@ cat scrap.txt | grep "\b[a-zA-Z]*[^0-9a-zA-Z ][a-zA-Z]*\b"
 Extraer fechas textuales con cierto patrón
 
 ```
-adrianrdzv@adrianrdzv-Lenovo-ideapad-Y700-17ISK:~/Descargas$ cat scrap.txt | grep -E "[0-9]* de \b[a-zA-Z]*\b de [0-9]*"
+~/Descargas$ cat scrap.txt | grep -E "[0-9]* de \b[a-zA-Z]*\b de [0-9]*"
 2 de octubre de 2018
 ```
 
@@ -100,7 +100,7 @@ El operador ^ puede denotar varias cosas en un rango [0-9] niega el rango, su ot
 
 Existen los parentesis cuando  se quiere usar los primeros 2 operadores sobre tokens mas grandes que una letra por ejempo (ha)* puede capturar hahahaha cuando ha* capturaria haaaaa, tambien puede servir para referenciar una expresion regular con \1 o \2 segun el numero que le corresponda, esto puede llegar a ser muy util para expresiones regulares mas complejas
 
-Existen mas operadores estos son solo algunos y tambien existen varias vertientes de las expresiones regulares que varian, por lo cual es bueno revisar la documentacion de cada implementación pero por lo general los previos comentados son estandares, el uso de parentesis y operadores como | (or) con grep se ocupa el tag -E que denota expresiones regulares extendidas.
+Existen mas operadores estos son solo algunos y tambien existen varias vertientes de las expresiones regulares que varian, por lo cual es bueno revisar la documentacion de cada implementación pero por lo general los previos comentados son estandares, el uso de parentesis y operadores como \| (or) con grep se ocupa el tag -E que denota expresiones regulares extendidas.
 
 ### Como se puede aplicar a NLP
 
