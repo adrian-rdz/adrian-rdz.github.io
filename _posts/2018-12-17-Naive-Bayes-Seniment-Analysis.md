@@ -24,10 +24,10 @@ $$P(c|x) = \frac{P(x|c)P(c)}{P(x)}$$
 
 Donde 
 
-* \(P(c|x)\) es la probabilidad a posteriori
-* \(P(x|c)\) el Likelihood
-* \(P(c)\) es la probabilidad a priori de la clase (las suposiciones o evidencias que tenemos (se puede basar en proporciones y conteos a partir de los datos que tenemos disponibles))
-* \(P(x)\) probabilidad a priori del predictor
+* $$P(c|x)$$ es la probabilidad a posteriori
+* $$P(x|c)$$ el Likelihood
+* $$P(c)$$ es la probabilidad a priori de la clase (las suposiciones o evidencias que tenemos (se puede basar en proporciones y conteos a partir de los datos que tenemos disponibles))
+* $$P(x)$$ probabilidad a priori del predictor
 
 Esta regla es muy util dado que podemos predecir la probabilidad de una clase dada la información observable al igual los otros parametros son estimables con la informacion observable o incorporando nuestro conocimiento previo del proceso.
 
