@@ -76,7 +76,7 @@ print(book.get_metadata);print("\n")
     None
 
 ​    
-​    FundaciÃ³n
+​    Fundación
 
 
 ​    
@@ -125,13 +125,13 @@ for x in book.toc:
 ```
 
     Cubierta
-    FundaciÃ³n
-    El Ciclo de TrÃ¡ntor
+    Fundación
+    El Ciclo de Trántor
     Los Psicohistoriadores
     Los Enciclopedistas
     Los Alcaldes
     Los Comerciantes
-    Los PrÃ­ncipes Comerciantes
+    Los Príncipes Comerciantes
     Autor
 
 #### Guardamos en una lista los xhmtls que analizaremos
@@ -197,7 +197,7 @@ soup.get_text()[0:300]
 
 
 
-    '\nEl Ciclo de TrÃ¡ntor\nEn 1966, en la 24 ConvenciÃ³n Mundial de Ciencia FicciÃ³n, celebrada en Cleveland, se otorgÃ³ el premio Â«HugoÂ»[1] a la mejor Â«serie de novelasÂ» del gÃ©nero a la TrilogÃ­a de las Fundaciones de Isaac Asimov, de la que el presente tÃ­tulo, FundaciÃ³n, constituye la primera parte. El cita'
+    '\nEl Ciclo de Trántor\nEn 1966, en la 24 Convención Mundial de Ciencia Ficción, celebrada en Cleveland, se otorgó el premio Â«HugoÂ»[1] a la mejor Â«serie de novelasÂ» del género a la TrilogÃ­a de las Fundaciones de Isaac Asimov, de la que el presente tÃ­tulo, Fundación, constituye la primera parte. El cita'
 
 #### Obtenemos un string con todo el texto del libro concatenado
 
@@ -254,16 +254,16 @@ for token in res_nlp:
 ​    SELDON PROPN ROOT
 ​    â€” PUNCT punct
 ​    â€¦ PUNCT punct
-​    NaciÃ³ VERB ccomp
+​    Nació VERB ccomp
 ​    el DET det
 ​    aÃ±o NOUN obl
 ​    11988 NUM compound
 ​    de ADP case
 ​    la DET det
 ​    Era PROPN nmod
-​    GalÃ¡ctica PROPN flat
+​    Galáctica PROPN flat
 ​    ; PUNCT punct
-​    falleciÃ³ VERB advcl
+​    falleció VERB advcl
 ​    en ADP case
 ​    12069 NOUN obl
 ​    . PUNCT punct
@@ -280,15 +280,15 @@ for ent in res_nlp.ents:
     Gaal Dornick 872 884 PER
     Seldon 917 923 PER
     Gaal Dornick 1036 1048 PER
-    TrÃ¡ntor 1101 1108 PER
+    Trántor 1101 1108 PER
     Gaal 1765 1769 PER
     Hari Seldon 3574 3585 PER
-    TrÃ¡ntor 3596 3603 PER
+    Trántor 3596 3603 PER
     Proyecto Seldon 3640 3655 PER
     Gaal 3664 3668 PER
-    TrÃ¡ntor 3728 3735 PER
+    Trántor 3728 3735 PER
     No 3753 3755 PER
-    TrÃ¡ntor 4401 4408 PER
+    Trántor 4401 4408 PER
 
 
 Entre las entidades de tipo PER ("persona") si capta nombres como Gaal Dornick y Hari Seldon, pero capta tambien lugares y otros erroneos
@@ -304,7 +304,7 @@ for ent in res_nlp.ents:
 
 ​    
 ​     2 4 LOC
-​    HelicÃ³n 227 234 LOC
+​    Helicón 227 234 LOC
 ​    Arturo 246 252 LOC
 
 
@@ -312,7 +312,7 @@ for ent in res_nlp.ents:
 ​     1023 1025 LOC
 ​    Galaxia 1517 1524 LOC
 ​    Galaxia 1620 1627 LOC
-​    TrÃ¡ntor 1687 1694 LOC
+​    Trántor 1687 1694 LOC
 ​    Fueron 1696 1702 LOC
 ​    Synnax 2027 2033 LOC
 ​    Galaxia 3011 3018 LOC
@@ -340,7 +340,7 @@ for ent in res_nlp.ents:
 
 ​    
 ​     2 4 LOC
-​    HelicÃ³n 227 234 LOC
+​    Helicón 227 234 LOC
 ​    Arturo 246 252 LOC
 
 
@@ -348,7 +348,7 @@ for ent in res_nlp.ents:
 ​     1023 1025 LOC
 ​    Galaxia 1517 1524 LOC
 ​    Galaxia 1620 1627 LOC
-​    TrÃ¡ntor 1687 1694 LOC
+​    Trántor 1687 1694 LOC
 ​    Fueron 1696 1702 LOC
 ​    Synnax 2027 2033 LOC
 ​    Galaxia 3011 3018 LOC
@@ -357,15 +357,15 @@ for ent in res_nlp.ents:
 ​    ParecÃ­a 7798 7805 LOC
 ​    Dornick 7837 7844 LOC
 ​    La 8305 8307 LOC
-​    LlegÃ³ 8360 8365 LOC
-​    TratÃ³ 8810 8815 LOC
-​    NÃ³mbreme 8923 8931 LOC
+​    Llegó 8360 8365 LOC
+​    Trató 8810 8815 LOC
+​    Nómbreme 8923 8931 LOC
 ​    Brillaba 9213 9221 LOC
 ​    El billete 9338 9348 LOC
 
 
 Entre los lugares igualmente capta Galaxia, 
- planeta Trantor, planeta Synnax, planeta HÃ©licon
+ planeta Trantor, planeta Synnax, planeta Hélicon
 
 
 ```python
@@ -382,13 +382,13 @@ for token in res_nlp:
     HARI PROPN nsubj
     SELDON PROPN ROOT
     Era PROPN nmod
-    GalÃ¡ctica PROPN flat
+    Galáctica PROPN flat
     Era PROPN nmod
     Fundacional PROPN flat
     E. PROPN obj
     F. PROPN flat
     Nacido PROPN flat
-    HelicÃ³n PROPN nmod
+    Helicón PROPN nmod
     Arturo PROPN nmod
     Indudablemente PROPN flat
     Seldon PROPN nsubj
@@ -396,7 +396,7 @@ for token in res_nlp:
     Dornick PROPN flat
     Seldon PROPN obj
     Enciclopedia PROPN appos
-    GalÃ¡ctica[2 PROPN flat
+    Galáctica[2 PROPN flat
     Gaal PROPN nsubj
     Dornick PROPN flat
 
@@ -416,7 +416,7 @@ sents[10]
 
 
 
-    Por aquel entonces, habÃ­a cerca de veinticinco millones de planetas habitados en la Galaxia, y absolutamente todos eran leales al imperio, con sede en TrÃ¡ntor.
+    Por aquel entonces, habÃ­a cerca de veinticinco millones de planetas habitados en la Galaxia, y absolutamente todos eran leales al imperio, con sede en Trántor.
 
 
 
@@ -428,7 +428,7 @@ sents[2]
 
 
 
-    Las anÃ©cdotas sobre su inteligencia son innumerables, y algunas contradictorias.
+    Las anécdotas sobre su inteligencia son innumerables, y algunas contradictorias.
 
 
 
@@ -464,13 +464,13 @@ displacy.render(res_nlp, style='ent', jupyter=True)
 </mark>
  de 
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
-​    TrÃ¡ntor
+​    Trántor
 
     <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">PER</span>
 </mark>
-En 1966, en la 24 ConvenciÃ³n 
+En 1966, en la 24 Convención 
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
-​    Mundial de Ciencia FicciÃ³n
+​    Mundial de Ciencia Ficción
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">MISC</span>
 </mark>
 , celebrada en 
@@ -478,7 +478,7 @@ En 1966, en la 24 ConvenciÃ³n
 ​    Cleveland
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">LOC</span>
 </mark>
-, se otorgÃ³ el premio Â«HugoÂ»[1] a la mejor Â«serie de novelasÂ» del gÃ©nero a la 
+, se otorgó el premio Â«HugoÂ»[1] a la mejor Â«serie de novelasÂ» del género a la 
 <mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
 ​    TrilogÃ­a de las Fundaciones de
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">ORG</span>
@@ -490,20 +490,20 @@ En 1966, en la 24 ConvenciÃ³n
 </mark>
 , de la que el presente tÃ­tulo, 
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
-​    FundaciÃ³n
+​    Fundación
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">PER</span>
 </mark>
 , constituye la primera parte. 
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
-​    El citado premio se estableciÃ³
+​    El citado premio se estableció
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">MISC</span>
 </mark>
- por primera vez aquel aÃ±o, y no galardonaba, como los demÃ¡s Â«
+ por primera vez aquel aÃ±o, y no galardonaba, como los demás Â«
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
 ​    Hugos
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">MISC</span>
 </mark>
-Â», Ãºnicamente el mejor trabajo del aÃ±o en su categorÃ­a (la Â«serie de novelasÂ» no es un fenÃ³meno tan frecuente como para poder establecer un premio anual en esta categorÃ­a), sino la mejor serie de 
+Â», Ãºnicamente el mejor trabajo del aÃ±o en su categorÃ­a (la Â«serie de novelasÂ» no es un fenómeno tan frecuente como para poder establecer un premio anual en esta categorÃ­a), sino la mejor serie de 
 <mark class="entity" style="background: #ff9561; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
 ​    CF
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">LOC</span>
@@ -514,32 +514,32 @@ En 1966, en la 24 ConvenciÃ³n
 
     <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">ORG</span>
 </mark>
-Y de lo que no hay duda es de que se trata de una de las obras mÃ¡s ambiciosas del gÃ©nero en cuanto a planteamiento y amplitud. 
+Y de lo que no hay duda es de que se trata de una de las obras más ambiciosas del género en cuanto a planteamiento y amplitud. 
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
 ​    Asimov
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">PER</span>
 </mark>
- toma como punto de partida de su narraciÃ³n-especulaciÃ³n el comienzo de la decadencia 
+ toma como punto de partida de su narración-especulación el comienzo de la decadencia 
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
 ​    â€”en
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">PER</span>
 </mark>
- un remotÃ­simo futuroâ€” de un colosal imperio galÃ¡ctico que abarca a toda la humanidad, diseminada por millones de mundos. 
+ un remotÃ­simo futuroâ€” de un colosal imperio galáctico que abarca a toda la humanidad, diseminada por millones de mundos. 
 <mark class="entity" style="background: #ff9561; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
-​    La capital de este superestado cÃ³smico
+​    La capital de este superestado cósmico
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">LOC</span>
 </mark>
  es 
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
-​    TrÃ¡ntor
+​    Trántor
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">PER</span>
 </mark>
-, un planeta Ã­ntegramente destinado a las tareas administrativas, totalmente dependiente de los suministros exterioresâ€¦ y por ello extremadamente vulnerableâ€¦ Un psicÃ³logo y matemÃ¡tico genial prevÃ© el derrumbamiento del 
+, un planeta Ã­ntegramente destinado a las tareas administrativas, totalmente dependiente de los suministros exterioresâ€¦ y por ello extremadamente vulnerableâ€¦ Un psicólogo y matemático genial prevé el derrumbamiento del 
 <mark class="entity" style="background: #ff9561; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
 ​    Imperio
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">LOC</span>
 </mark>
- y el subsiguiente caos, y decide emplear la ciencia psicohistÃ³rica (una especie de psicologÃ­a de masas matemÃ¡ticamente estructurada) para reducir al mÃ­nimo el inevitable perÃ­odo de barbarie que antecederÃ¡ a la consolidaciÃ³n de un 
+ y el subsiguiente caos, y decide emplear la ciencia psicohistórica (una especie de psicologÃ­a de masas matemáticamente estructurada) para reducir al mÃ­nimo el inevitable perÃ­odo de barbarie que antecederá a la consolidación de un 
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
 ​    Segundo Imperio
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">PER</span>
@@ -565,27 +565,27 @@ Para ello establece dos
 ​    A partir de aquÃ­
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">MISC</span>
 </mark>
-, se irÃ¡n sucediendo diversas Ã©pocas 
+, se irán sucediendo diversas épocas 
 <mark class="entity" style="background: #ff9561; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
 ​    â€”cuyo
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">LOC</span>
 </mark>
- advenimiento vendrÃ¡ marcado por otras tantas crisisâ€” previstas por la psicohistoria, en las que cambiarÃ¡n las cabezas visibles del poder y las formas de ejercerlo, pero en las que la 
+ advenimiento vendrá marcado por otras tantas crisisâ€” previstas por la psicohistoria, en las que cambiarán las cabezas visibles del poder y las formas de ejercerlo, pero en las que la 
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
-​    Primera FundaciÃ³n
+​    Primera Fundación
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">MISC</span>
 </mark>
- (de la segunda no tendremos noticias hasta la Ãºltima parte de la trilogÃ­a) irÃ¡ expandiendo y afianzando cada vez mÃ¡s su influencia sobre la 
+ (de la segunda no tendremos noticias hasta la Ãºltima parte de la trilogÃ­a) irá expandiendo y afianzando cada vez más su influencia sobre la 
 <mark class="entity" style="background: #ff9561; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
 ​    Galaxia
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">LOC</span>
 </mark>
-.</br>InspirÃ¡ndose directamente â€”como Ã©l mismo ha reconocidoâ€” en la historia de nuestro pasado, 
+.</br>Inspirándose directamente â€”como él mismo ha reconocidoâ€” en la historia de nuestro pasado, 
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
 ​    Asimov
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">PER</span>
 </mark>
- bosqueja los procesos sociopolÃ­ticos de su futuro hipotÃ©tico, el paso de una forma de gobierno basada en la religiÃ³n a una plutocracia mÃ¡s explÃ­cita, o, si se prefiere, del supersticioso 
+ bosqueja los procesos sociopolÃ­ticos de su futuro hipotético, el paso de una forma de gobierno basada en la religión a una plutocracia más explÃ­cita, o, si se prefiere, del supersticioso 
 <mark class="entity" style="background: #ff9561; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
 ​    Medioevo
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">LOC</span>
@@ -603,7 +603,7 @@ Para ello establece dos
 </mark>
 AsÃ­, en este primer volumen asistimos a las Â«crisis de crecimientoÂ» de la 
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
-​    Primera FundaciÃ³n
+​    Primera Fundación
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">MISC</span>
 </mark>
 , hasta que extiende sus dominios hacia el mismo centro de la 
@@ -611,7 +611,7 @@ AsÃ­, en este primer volumen asistimos a las Â«crisis de crecimientoÂ» de 
 ​    Galaxiaâ€¦
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">MISC</span>
 </mark>
-, donde, inevitablemente, tropezarÃ¡ con los restos del antiguo 
+, donde, inevitablemente, tropezará con los restos del antiguo 
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
 ​    Imperio
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">MISC</span>
@@ -622,9 +622,9 @@ AsÃ­, en este primer volumen asistimos a las Â«crisis de crecimientoÂ» de 
 
     <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">ORG</span>
 </mark>
-Este colosal encuentro cÃ³smico darÃ¡ lugar a la segunda parte de la trilogÃ­a, 
+Este colosal encuentro cósmico dará lugar a la segunda parte de la trilogÃ­a, 
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
-​    FundaciÃ³n
+​    Fundación
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">PER</span>
 </mark>
  e 
@@ -632,20 +632,20 @@ Este colosal encuentro cÃ³smico darÃ¡ lugar a la segunda parte de la trilog�
 ​    Imperio
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">PER</span>
 </mark>
-, donde la sÃºbita apariciÃ³n de un factor imprevisible amenaza con desbaratar el gigantesco y meticuloso plan de los psicohistoriadores. 
+, donde la sÃºbita aparición de un factor imprevisible amenaza con desbaratar el gigantesco y meticuloso plan de los psicohistoriadores. 
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
 ​    Pues dicho elemento perturbador
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">MISC</span>
 </mark>
- es un mutante, un individuo dotado de extraordinarios poderes mentales y que la psicohistoria no puede integrar en sus cÃ¡lculos, ya que se trata de un individuo aislado y esta ciencia sÃ³lo puede operar sobre la base de grandes masas humanas (del mismo modo que la teorÃ­a cinÃ©tica de los gases puede predecir el comportamiento global de millones de molÃ©culas, pero no el de una molÃ©cula determinada).
+ es un mutante, un individuo dotado de extraordinarios poderes mentales y que la psicohistoria no puede integrar en sus cálculos, ya que se trata de un individuo aislado y esta ciencia sólo puede operar sobre la base de grandes masas humanas (del mismo modo que la teorÃ­a cinética de los gases puede predecir el comportamiento global de millones de moléculas, pero no el de una molécula determinada).
 <mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
 ​    
 
     <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">ORG</span>
 </mark>
-Entonces entrarÃ¡ en escena la 
+Entonces entrará en escena la 
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
-​    Segunda FundaciÃ³n
+​    Segunda Fundación
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">MISC</span>
 </mark>
 , dando paso a la tercera y Ãºltima parte de la serieâ€¦ Pero no anticipemos los acontecimientos, pues uno de los mayores alicientes de la trilogÃ­a es su tratamiento poco menos que detectivescoâ€¦ Un absorbente relato de intriga montado a una escala gigantesca, tanto espacial como temporal.
@@ -656,24 +656,24 @@ Entonces entrarÃ¡ en escena la
 </mark>
 Cada una de las cinco partes que componen 
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
-​    FundaciÃ³n
+​    Fundación
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">PER</span>
 </mark>
-, asÃ­ como las que integran los otros dos tÃ­tulos de la trilogÃ­a, constituyen un relato autÃ³nomo (de hecho, inicialmente fueron publicados en revistas como relatos sueltos), aunque obviamente relacionado con los demÃ¡s, como las partes de un texto de historia.
+, asÃ­ como las que integran los otros dos tÃ­tulos de la trilogÃ­a, constituyen un relato autónomo (de hecho, inicialmente fueron publicados en revistas como relatos sueltos), aunque obviamente relacionado con los demás, como las partes de un texto de historia.
 <mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
 ​    
 
     <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">ORG</span>
 </mark>
-Del mismo modo, cada uno de los tres volÃºmenes de la trilogÃ­a constituye un todo en sÃ­ mismo, aunque una comprensiÃ³n completa exige la lectura de toda la obra, y, a ser posible, en el orden indicado, que es el mismo que hemos seguido en su publicaciÃ³n.
+Del mismo modo, cada uno de los tres volÃºmenes de la trilogÃ­a constituye un todo en sÃ­ mismo, aunque una comprensión completa exige la lectura de toda la obra, y, a ser posible, en el orden indicado, que es el mismo que hemos seguido en su publicación.
 <mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
 ​    
 
     <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">ORG</span>
 </mark>
-Por Ãºltimo, por si algÃºn lector se pregunta por quÃ© esta introducciÃ³n se titula Â«
+Por Ãºltimo, por si algÃºn lector se pregunta por qué esta introducción se titula Â«
 <mark class="entity" style="background: #ddd; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
-​    El ciclo de TrÃ¡ntor
+​    El ciclo de Trántor
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">MISC</span>
 </mark>
 Â», y no, por ejemplo, Â«
@@ -681,7 +681,7 @@ Por Ãºltimo, por si algÃºn lector se pregunta por quÃ© esta introducciÃ³
 ​    La trilogÃ­a de las Fundaciones
 ​    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; text-transform: uppercase; vertical-align: middle; margin-left: 0.5rem">MISC</span>
 </mark>
-Â», les aclararÃ© que eso es algo que entenderÃ¡n perfectamenteâ€¦ en cuanto concluya la serie.
+Â», les aclararé que eso es algo que entenderán perfectamenteâ€¦ en cuanto concluya la serie.
 <mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em; box-decoration-break: clone; -webkit-box-decoration-break: clone">
 ​    
 
