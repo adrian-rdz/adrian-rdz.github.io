@@ -28,7 +28,7 @@ Dado que la canitidad de temas e información vista fue inmensa tratare de recup
 1. [POStagging usando viterbi decoding y comparacion VS CoreNLP](https://adrian-rdz.github.io/POS-tagging-usando-HMM-y-Viterbi-Decoding/)
 2. [Naive Bayes para Clasificacion de Sentimientos de Textos](https://adrian-rdz.github.io/Naive-Bayes-Seniment-Analysis/)
 3. [NLP WordVectors (Representacion de palabras en un espacio vectorial)](https://adrian-rdz.github.io/NLP_word2vec/)
-4. NLP primeros pasos (POS tagging NER wordvectors etc etc) usando Spacy
+4. [NLP primeros pasos (POS tagging NER wordvectors etc etc) usando Spacy](https://adrian-rdz.github.io/asimov_NLP/)
 5. Traduccion usando Matriz de Transformacion (Word Vectors)
 6. Primeros pasos uso de datos geoespaciales GIS
 7. Choroplets y graficos Geoespaciales (Python, R)
