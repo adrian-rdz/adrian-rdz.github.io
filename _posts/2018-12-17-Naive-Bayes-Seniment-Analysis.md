@@ -1,5 +1,5 @@
 ---
-title: "Naive Bayes Seniment Analysis"
+title: "Naive Bayes Sentiment Analysis"
 date: 2018-12-17
 tags: [ML,Clasificación,computacion]
 excerpt: "Clasificador Ingenuo Bayesiano aplicado a analisis de sentimientos"
