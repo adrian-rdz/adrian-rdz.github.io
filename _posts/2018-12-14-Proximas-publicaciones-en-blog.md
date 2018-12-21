@@ -37,7 +37,7 @@ Dado que la canitidad de temas e información vista fue inmensa tratare de recup
 10. Algunos ejercicio de Series de Tiempo Economicas (Tarea 1)
 11. Experimentos MonteCarlo para revisar raices unitarias correlacion serial y causacion en el sentido de Granger (Tarea 4)
 12. Forecasting (Modelo ARIMA vs SSA vs Regresion simple)
-13. Analisis de Informacion usando solo la consola y bash (Miscelaneo)
+13. [Analisis de Informacion usando solo la consola y bash (Miscelaneo)](https://adrian-rdz.github.io/bash_explorar_datos/)
 14. Configurar red casera para ser accedida remotamente (Tecnico)
 15. Montar discos duros remotos y usar servicios remotos usando tunneles SSH (Tecnico)
 16. Primero pasos Docker (instalacion, primer container, comandos basicos) (Tecnico)
