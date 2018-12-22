@@ -32,7 +32,7 @@ Dado que la cantidad de temas e información vista fue inmensa tratare de recupe
 5. Traducción usando Matriz de Transformación (Word Vectors)
 6. Primeros pasos uso de datos geoespaciales GIS
 7. Choroplets y gráficos Geoespaciales (Python, R)
-8. Lasso VS Ridge (CE)
+8. [Lasso VS Ridge (CE)](https://adrian-rdz.github.io/publicacion_LASSO_RIDGE/)
 9. Primeros pasos en Imputación Estadística (CE)
 10. Algunos ejercicio de Series de Tiempo Económicas (ST-MA)
 11. Experimentos MonteCarlo para revisar raices unitarias correlación serial y causacion en el sentido de Granger (ST-MA)
