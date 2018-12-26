@@ -38,9 +38,9 @@ Dado que la cantidad de temas e información vista fue inmensa tratare de recupe
 11. Experimentos MonteCarlo para revisar raices unitarias correlación serial y causacion en el sentido de Granger (ST-MA)
 12. Forecasting (Modelo ARIMA vs SSA vs Regresión simple)
 13. [Analisis de Información usando solo la consola y bash (Miscelaneo)](https://adrian-rdz.github.io/bash_explorar_datos/)
-14. Configurar red casera para ser accedida remotamente (Técnico)
+14. [Configurar red casera para ser accedida remotamente (Técnico)](https://adrian-rdz.github.io/Configurar-red-casera-para-ser-accedida-remotamente/)
 15. Montar discos duros remotos y usar servicios remotos usando túneles SSH (Técnico)
-16. Primero pasos Docker (instalación, primer container, comandos basicos) (Técnico)
+16. [Primero pasos Docker (instalación, primer container, comandos basicos) (Técnico)](https://adrian-rdz.github.io/Primeros-pasos-con-Docker/)
 17. Creación de imagen docker usando un Dockerfile y docker build (Técnico)
 18. Comandos útiles en bash (uso común) (Tecnico)
 19. Proyecto PLN para datos de noticias de Mexico (Parte 1) Introducción
