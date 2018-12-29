@@ -1,6 +1,6 @@
 ---
 title: "Proyecto PLN para datos de noticias de México (Parte 1) Introducción"
-date: 2018-12-21
+date: 2018-12-28
 tags: [NLP, webscrapping, Clasificación]
 excerpt: "Introducción al proyecto de Procesamiento de Lenguaje Natural aplicado a noticias de México"
 mathjax: "true"
