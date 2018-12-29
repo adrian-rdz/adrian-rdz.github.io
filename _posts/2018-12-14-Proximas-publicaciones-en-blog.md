@@ -33,7 +33,7 @@ Dado que la cantidad de temas e información vista fue inmensa tratare de recupe
 6. Primeros pasos uso de datos geoespaciales GIS
 7. Choroplets y gráficos Geoespaciales (Python, R)
 8. [Lasso VS Ridge (CE)](https://adrian-rdz.github.io/publicacion_LASSO_RIDGE/)
-9. Primeros pasos en Imputación Estadística (CE)
+9. [Primeros pasos en Imputación Estadística (CE)](https://adrian-rdz.github.io/Imputacion_Estadistica/)
 10. Algunos ejercicio de Series de Tiempo Económicas (ST-MA)
 11. Experimentos MonteCarlo para revisar raices unitarias correlación serial y causacion en el sentido de Granger (ST-MA)
 12. Forecasting (Modelo ARIMA vs SSA vs Regresión simple)
@@ -43,7 +43,7 @@ Dado que la cantidad de temas e información vista fue inmensa tratare de recupe
 16. [Primero pasos Docker (instalación, primer container, comandos basicos) (Técnico)](https://adrian-rdz.github.io/Primeros-pasos-con-Docker/)
 17. Creación de imagen docker usando un Dockerfile y docker build (Técnico)
 18. Comandos útiles en bash (uso común) (Tecnico)
-19. Proyecto PLN para datos de noticias de Mexico (Parte 1) Introducción
+19. [Proyecto PLN para datos de noticias de Mexico (Parte 1) Introducción](https://adrian-rdz.github.io/Proyecto_PLN_para_noticias_de_Mexico_pt1_Introduccion/)
 20. Proyecto PLN para datos de noticias de Mexico (Parte 2) Infraestructura 
 21. Proyecto PLN para datos de noticias de Mexico (Parte 3) Obtencion de Informacion Scrapping-Web
 22. Proyecto PLN para datos de noticias de Mexico (Parte 4) Doc2Vec
