@@ -41,7 +41,7 @@ Dado que la cantidad de temas e información vista fue inmensa tratare de recupe
 14. [Configurar red casera para ser accedida remotamente (Técnico)](https://adrian-rdz.github.io/Configurar-red-casera-para-ser-accedida-remotamente/)
 15. [Montar discos duros remotos y usar servicios remotos usando túneles SSH (Técnico)](https://adrian-rdz.github.io/ssh_tuneles_conexiones/)
 16. [Primero pasos Docker (instalación, primer container, comandos basicos) (Técnico)](https://adrian-rdz.github.io/Primeros-pasos-con-Docker/)
-17. Creación de imagen docker usando un Dockerfile y docker build (Técnico)
+17. [Creación de imagen docker usando un Dockerfile y docker build (Técnico)](https://adrian-rdz.github.io/Parte_2_Docker_Usando_Dockerfiles/)
 18. Comandos útiles en bash (uso común) (Tecnico)
 19. [Proyecto PLN para datos de noticias de Mexico (Parte 1) Introducción](https://adrian-rdz.github.io/Proyecto_PLN_para_noticias_de_Mexico_pt1_Introduccion/)
 20. Proyecto PLN para datos de noticias de Mexico (Parte 2) Infraestructura 
