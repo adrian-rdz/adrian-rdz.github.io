@@ -1,6 +1,6 @@
 ---
 title: "Creación de imagen docker usando un Dockerfile y docker build"
-date: 2018-12-21
+date: 2018-12-29
 tags: [Docker, tecnico, linux]
 excerpt: "Crear imagenes docker usando archivo Dockerfile y comando docker build"
 mathjax: "true"
