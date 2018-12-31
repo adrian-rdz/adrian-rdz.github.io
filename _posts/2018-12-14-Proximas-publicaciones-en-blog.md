@@ -30,7 +30,7 @@ Dado que la cantidad de temas e información vista fue inmensa tratare de recupe
 3. [NLP WordVectors (Representación de palabras en un espacio vectorial)](https://adrian-rdz.github.io/NLP_word2vec/)
 4. [NLP primeros pasos (POS tagging NER wordvectors etc etc) usando Spacy](https://adrian-rdz.github.io/asimov_NLP/)
 5. [Traducción usando Matriz de Transformación (Word Vectors)](https://adrian-rdz.github.io/NLP_Machine_Translation/)
-6. Primeros pasos uso de datos geoespaciales GIS
+6. [Primeros pasos uso de datos geoespaciales GIS](https://adrian-rdz.github.io/GIS_primeros_pasos/)
 7. Choroplets y gráficos Geoespaciales (Python, R)
 8. [Lasso VS Ridge (CE)](https://adrian-rdz.github.io/publicacion_LASSO_RIDGE/)
 9. [Primeros pasos en Imputación Estadística (CE)](https://adrian-rdz.github.io/Imputacion_Estadistica/)

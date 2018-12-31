@@ -291,7 +291,7 @@ mexico_map.add_child(feature_group)
 mexico_map
 ```
 
-![](/home/adrianrdzv/.config/Typora/typora-user-images/1546218910977.png)
+![](https://i.imgur.com/zIhOczg.png)
 
 ##Conclusiones
 
