@@ -293,7 +293,9 @@ mexico_map
 
 ![](https://i.imgur.com/zIhOczg.png)
 
-##Conclusiones
+
+
+## Conclusiones
 
 Lo mostrado es una probadita de cosas que se pueden hacer, usando herramientas y lenguajes opensource, pero se puede hacer analisis mas interesantes y extendidos.
 
