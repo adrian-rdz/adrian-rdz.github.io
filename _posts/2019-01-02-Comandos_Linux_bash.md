@@ -183,7 +183,8 @@ Existe muchos comandos y hay algunos que en algun tiempo use mucho y despues no 
 Para ver muchos mas comandos utiles recomiendo estos enlaces:
 
 - [https://www.howtoforge.com/linux-commands/](https://www.howtoforge.com/linux-commands/)
+- [https://www.commandlinefu.com/commands/browse](https://www.commandlinefu.com/commands/browse)
 - [https://www.linuxito.com/gnu-linux/nivel-basico/988-comandos-y-trucos-de-linea-de-comandos-de-viejo-lobo-sysadmin](https://www.linuxito.com/gnu-linux/nivel-basico/988-comandos-y-trucos-de-linea-de-comandos-de-viejo-lobo-sysadmin)
-- https://github.com/jlevy/the-art-of-command-line/blob/master/README.md
+- [https://github.com/jlevy/the-art-of-command-line/blob/master/README.md](https://github.com/jlevy/the-art-of-command-line/blob/master/README.md)
 - https://stackoverflow.com/questions/5725296/difference-between-sh-and-bash
 
