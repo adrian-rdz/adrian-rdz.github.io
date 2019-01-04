@@ -1,3 +1,13 @@
+# Blog de Adrián Rodríguez
+
+Este es mi blog, y se basa en un template de Jekyll de Michael Rose, mas abajo se encuentra el readme del template y las notas de copyright
+
+En este blog ire poniendo algunos tutoriales de Ciencia de Datos, proyectos que vaya haciendo ya sea solo o en colaboración y notas técncicas de GNU-Linux entre otras cosas
+
+[acceder a mi blog](http://adrian-rdz.github.io/)
+
+---
+
 # [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE.txt)
@@ -12,7 +22,7 @@ Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your
 [![Minimal Mistakes live preview][2]][1]
 
 [1]: https://mmistakes.github.io/minimal-mistakes/
-[2]: screenshot.png (live preview)
+[2]: screenshot.png "live preview"
 
 ![layout examples](screenshot-layouts.png)
 
