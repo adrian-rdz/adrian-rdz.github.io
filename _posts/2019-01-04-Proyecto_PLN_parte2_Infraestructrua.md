@@ -3,7 +3,7 @@ title: Proyecto PLN para datos de noticias de México (Parte 2) Infraestructura
 date: 2019-01-04
 author: Adrián Rodríguez
 tags: [tecnico, linux, infraestructura, docker]
-excerpt: "Comandos bash utiles para Linux"
+excerpt: "Descripción de la infraestructura usada para el proyecto y algunos pasos tecnicos que se llevaron acabo"
 mathjax: "true"
 ---
 
