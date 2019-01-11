@@ -45,7 +45,7 @@ Dado que la cantidad de temas e información vista fue inmensa tratare de recupe
 18. [Comandos útiles en bash (uso común) (Tecnico)](https://adrian-rdz.github.io/Comandos_Linux_bash/)
 19. [Proyecto PLN para datos de noticias de Mexico (Parte 1) Introducción](https://adrian-rdz.github.io/Proyecto_PLN_para_noticias_de_Mexico_pt1_Introduccion/)
 20. [Proyecto PLN para datos de noticias de Mexico (Parte 2) Infraestructura](https://adrian-rdz.github.io/Proyecto_PLN_parte2_Infraestructrua/) 
-21. Proyecto PLN para datos de noticias de Mexico (Parte 3) Obtencion de Informacion Scrapping-Web
+21. [Proyecto PLN para datos de noticias de Mexico (Parte 3) Obtencion de Informacion Scrapping-Web](https://adrian-rdz.github.io/Proyecto_PLN_parte3_Scrapping/)
 22. Proyecto PLN para datos de noticias de Mexico (Parte 4) Doc2Vec
 23. Proyecto PLN para datos de noticias de Mexico (Parte 5) Análsis de Tópicos modelo LDA
 24. Proyecto PLN para datos de noticias de Mexico (Parte 5) Análsis de Tópicos modelo LDA Resultados

@@ -75,7 +75,7 @@ En la descripción de los pasos generales del proyecto cada paso conlleva varios
 
 - [Proyecto PLN para datos de noticias de México (Parte 1) Introducción (post actual)](https://adrian-rdz.github.io/Proyecto_PLN_para_noticias_de_Mexico_pt1_Introduccion/)
 - [Proyecto PLN para datos de noticias de México  Infraestructura](https://adrian-rdz.github.io/Proyecto_PLN_parte2_Infraestructrua/)
-- Proyecto PLN para datos de noticias de México  Obtención de Informacion Scrapping-Web
+- [Proyecto PLN para datos de noticias de México  Obtención de Informacion Scrapping-Web](https://adrian-rdz.github.io/Proyecto_PLN_parte3_Scrapping/)
 - Proyecto PLN para datos de noticias de México Clasificación de complejidad de textos
 - Proyecto PLN para datos de noticias de México  Doc2Vec Clasificación de textos
 - Proyecto PLN para datos de noticias de México Doc2Vec Buscar noticias similares
