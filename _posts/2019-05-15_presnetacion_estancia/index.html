@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>2do Avance</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Adrián Alejandro Rodríguez Villarreal" />
+    <link href="index_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } },
+      });
+    </script>
+    <style>
+    .mjx-mrow a {
+      color: black;
+      pointer-events: none;
+      cursor: default;
+    }
+    </style>
+    <link rel="stylesheet" href="assets/sydney-fonts.css" type="text/css" />
+    <link rel="stylesheet" href="assets/sydney.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# 2do Avance
+## Clasificación de datos de combinación de sensores para modelos de pronósticos en componentes mecánicos
+### Adrián Alejandro Rodríguez Villarreal
+### 30 Abril 2018
+
+---
+
+
+
+
+
+class: secciones
+background-image: url("assets/logocimat.png")
+background-size: 10%
+background-position: 5% 95%
+
+## Organización
+
+
+- Antecedentes
+- Definición del problema
+- Justificación
+- Objetivos
+- Metodología 
+- Experimentos y Resultados
+- Contribuciones
+- Conclusión y trabajo futuro
+
+---
+background-image: url("svg/Mantenimiento_Diagrama.svg")
+background-position: 30% 40%
+background-size: 90% 90%
+## Antecedentes
+### &lt;center&gt; Tipos de Mantenimiento &lt;/center&gt;
+
+---
+background-image: url("svg/Dibujo_Degradacion_sistema.svg")
+background-position: 40% 65%
+background-size: 60% 80%
+## Esquema de degradación de un sistema
+
+---
+background-image: url("svg/Barras_Fases_Mantenimientos.svg")
+background-position: 40% 65%
+background-size: 90% 90%
+## Evolución Mantenimientos
+
+---
+## Definición del problema
+
+- Detección de estados anómalos y el estado actual de la máquina.
+
+- Calcular los tiempos de vida restante útil de Máquinas/herramientas
+en base a la información de múltiples sensores en tiempo real
+
+- Conjuntar los 2 procesos previos, para predecir el RUL en el caso de que se haya entrado a la fase de transición
+
+
+&lt;!-- We aim to monitor the status  of the machine health in real time using multiple sensors and develop a machine learning based algorithm to automate predictive maintenance methodology. We divide the problem into two parts: --&gt;
+&lt;!-- To monitor the state of the machine (normal, transition, fail) based on the information of the sensors in real time  --&gt;
+&lt;!-- Compute the Remaining Useful Life (RUL) of the machine. --&gt;
+
+---
+## Justificación
+
+Existen estudios previos que muestran que es posible realizar la
+detección de anomalías y predicción de vida útil usando datos de
+sensores ( de un tipo de sensor), pero es posible extender las
+metodologías y aumentar el desempeño en estas tareas usando la
+combinación de sensores y desarrollar algoritmos nuevo de ML e IA.
+
+
+---
+## Objetivos
+- Implementar los métodos de ML e IA para detectar estados
+anómalos (estado correcto, transición, fallo) en tiempo real,
+
+
+- Lograr predecir con buena precisión el RUL (Tiempo de Vida
+Restante Útil) de componentes/máquinas a partir de los datos
+sensoriales disponibles
+
+
+- Cálculo de características de datos de sensores
+(WPD,Estadistícas,FFT) y implementar metodología de
+selección de características importantes.
+
+---
+## Objetivos
+
+
+- Implementar en diferentes aplicaciones (Componentes críticos
+de sistemas hidráulicos, drilling)
+
+
+- Se pretende exponer las ventajas de métodos más recientes vs
+métodos clásicos, y de los métodos propuestos contra los métodos de la literatura.
+
+---
+## Metodología
+&lt;center&gt;&lt;img src="svg/Metodologia_Metodos_Anomalías.svg" width=70% height=35% align="top"&gt;&lt;/center&gt;
+&lt;hr&gt;
+&lt;center&gt;&lt;img src="svg/Metodologia_Metodos_RUL.svg" width=70% height=35% align="top"&gt;&lt;/center&gt;
+
+---
+background-image: url("svg/Metodologia_online.svg")
+background-position: 20% 50%
+background-size: 90% 90%
+## Metodología Online
+
+---
+## Metodología
+### Métricas
+
+Para comparar los modelos y sus desempeños se usará algunas métricas relevantes como las siguientes:
+
+.pull-left[
+**Regresión**
+- MAE - `\(\frac{1}{n}\sum_{j=1}^{n}|\Delta(i)|\)`
+- SMAPE - `\(\frac{1}{n}\sum_{j=1}^{n}|\frac{100\Delta(i)^2}{ (y_i+\hat{y_i})/2 }|\)`
+- RMSE - `\(\sqrt{\frac{1}{n}\sum_{j=1}^{n}|\frac{100\Delta(i)^2}{y_i }|}\)`
+- Métricas específicas para penalizar pronósticos que sobrepasen RUL real
+]
+.pull-right[
+**Clasificación**
+- accuracy - `\(\frac{(TP+TN)}{TP+FP+FN+TN}\)`
+- precisión - `\(\frac{TP}{TP+FP}\)` 
+- recall - `\(\frac{TP}{TP+FN}\)`
+- F1 - `\(2*\frac{Precision*Recall}{Precision+Recall}\)`
+- ... Otras métricas para clases desbalanceadas
+]
+
+---
+## Datos para experimentos
+
+.pull-left[
+#### Componentes Hidráulicos
+- NASA Bearings IMS
+  - ti.arc.nasa.gov/tech/dash/-groups/pcoe/prognostic-data-repository/
+- FEMTO PHM 2012 Challenge
+  - data-acoustics.com/measurements/-bearing-faults/bearing-6/
+- Experimentos Bearing CIDESI
+]
+
+.pull-right[
+#### Drilling
+
+- Drilling (IIT)
+  - www.iitk.ac.in/iil/datasets/
+- Experimentos Drilling CIDESI
+]
+
+---
+background-image: url("svg/NASA_Bearings_dibujo.svg")
+background-position: 0% 20%
+background-size: 50% 50%
+## NASA Bearings
+
+.pull-right[
+* Rotación 2000RPM
+* 6.5 GB's de datos
+* 3 Sets de corrida hasta fallo
+* 2156/984/6324 archivos/set
+* Frec. muestreo 20kHz
+]
+
+&lt;iframe src="htmls/NASA_rms.html" width="100%" height="280" style="border: none;"&gt;
+
+---
+## DRILLING
+
+&lt;img src="svg/Drilling_tipos_fallos.svg"&gt;&lt;/img&gt;
+.pull-left[
+
+&lt;img src="svg/drill_err1.gif" width=512 height=110&gt;
+&lt;img src="svg/drill_err2.gif" width=512 height=110&gt;
+&lt;img src="svg/drill_err3.gif" width=512 height=110&gt;
+
+]
+
+.pull-right[
+- 3-AxisCNC EMCO Concept Mill 105
+- Broca de 9 mm de diámetro
+- Frec. muestreo = 32768 Hz
+- 4 Estados (3 Fallos, 1 Perfecto)
+- 121 Muestras Totales
+- Cada muestra consta de 8 seg
+]
+
+http://www.iitk.ac.in/iil/datasets/
+
+---
+background-image: url("svg/Degreadacion_tiempo_fft_tiempo.draw.svg")
+background-position: -15% 60%
+background-size: 60% 80%
+
+## FEMTO PHM2012
+
+.pull-right[
+&lt;img src="serie_degradacion.gif" width=300 height=342&gt;
+&lt;/br&gt; 
+Frec. muestreo: 25.6 KHZ &lt;/br&gt;
+3 Tipos de Condición &lt;/br&gt;
+6/11 Corridas Train-Test&lt;/br&gt;
+2GB Información.&lt;/br&gt;
+]
+&lt;br&gt;
+&lt;br&gt;
+http://data-acoustics.com/measurements/bearing-faults/bearing-6/
+
+---
+## Estadísticos para el dominio del Tiempo
+
+Dependiendo la frecuencia de muestreo de la señal y de las frecuencias internas de la señal, es posible sumarizar la información y reducir a una matriz de características por cada cierto segmento de un tamaño apropiado con lo cual puede ser más manejable tratar la información para dejarla lista para realizar clasificación o agregación
+
+.pull-left[
+- Media absoluta 
+- Raiz cuadratica media
+- Asimetría (Skewness)
+- Rango intercuartil
+- Picos encima de cuartiles superiores
+
+]
+
+.pull-right[
+- Desviación estándar
+- Distancia pico a pico (peak to peak)
+- Varianza
+- Kurtosis (cuarto momento)
+- Entropía
+]
+
+
+---
+background-image: url("svg/WPD(1).svg")
+background-position: 40% 40%
+background-size: 70% 70%
+## &lt;sup&gt;Wavelet Packet Transform y Wavelet Decomposition&lt;/sup&gt;
+
+---
+background-image: url("svg/FFT.svg")
+background-position: 40% 40%
+background-size: 70% 70%
+## Fast Fourier Transform
+
+---
+background-image: url("svg/Matriz_features.svg")
+background-position: 40% 40%
+background-size: 70% 70%
+## Matriz de Características
+
+
+---
+## Experimento clasificación de errores (Drilling)
+
+- Se realizó un ejercicio de clasificación sobre datos de Drilling, para usar algunos de los pasos como es el preprocesamiento, la transformación de características y la clasificación en sí. Aún está pendiente realizar Optimización de hiperparametros y validar con varias métricas el desempeño.
+
+- Se mandó ejecutar varios clasificadores base para ver cuanta diferencia se muestra entre los clasificadores base contra los de boosting y bagging, y ver si los que consideran relaciones lineales logran algo por encima del azar.
+
+
+&lt;!-- --- --&gt;
+
+&lt;!-- ## Resultados Clasificación Drill Data Set --&gt;
+
+&lt;!-- **Resultados** --&gt;
+
+&lt;!-- | Index | classifier                   | train_score | test_score | train_time | --&gt;
+&lt;!-- |-------|------------------------------|-------------|------------|------------| --&gt;
+&lt;!-- | 0     | Gradient Boosting Classifier | 1           | 0.982877   | 2.140795   | --&gt;
+&lt;!-- | 1     | Random Forest                | 1           | 0.958904   | 0.039526   | --&gt;
+&lt;!-- | 3     | Nearest Neighbors            | 0.946108    | 0.928082   | 0.00812    | --&gt;
+&lt;!-- | 4     | Decision Tree                | 1           | 0.900685   | 0.142393   | --&gt;
+&lt;!-- | 2     | Logistic Regression          | 0.85479     | 0.84589    | 0.325299   | --&gt;
+&lt;!-- | 8     | AdaBoost                     | 0.838323    | 0.780822   | 0.95439    | --&gt;
+&lt;!-- | 7     | Naive Bayes                  | 0.754491    | 0.756849   | 0.006918   | --&gt;
+&lt;!-- | 6     | Neural Net                   | 0.55988     | 0.537671   | 0.359009   | --&gt;
+&lt;!-- | 5     | Linear SVM                   | 1           | 0.246575   | 0.375702   | --&gt;
+&lt;!-- | 9     | Gaussian Process             | 1           | 0.239726   | 1.829299   | --&gt;
+
+---
+## Clasificación Drilling Accuracy/Performance
+
+&lt;span&gt;&lt;iframe src="bar_accuracy.html" width="49%" height="500" style="border: none;"&gt;&lt;/iframe&gt;&lt;/span&gt;
+&lt;span&gt;&lt;iframe src="bar_tiempo.html" width="49%" height="500" style="border: none;"&gt;&lt;/iframe&gt;&lt;/span&gt;
+
+---
+background-image: url("svg/Res_Confusion_DRILL.svg")
+background-position: 70% 60%
+background-size: 80% 80%
+## Resultados
+
+---
+## FEMTO PHM 2012 (Metodologías)
+
+Se ha aplicado 2 metodologías :
+- Usar los datos de entrenamiento sin considerar estratificar modelos en base a tipos de Bearings
+
+- Generación de modelo por cada tipo de Bearing, y selección de modelo usando (DTW, HMM) 
+
+Al momento ambos métodos presentan resultados no mejores al ganador de la competencia
+
+---
+background-image: url("svg/Copia_de_EsquemaProceso.svg")
+background-position: 40% 40%
+background-size: 90% 90%
+## FEMTO PHM 2012 (Metodologías)
+
+
+---
+## FEMTO PHM 2012 (Resultados)
+&lt;img src="png/1.png" width="37%" height="25%"&gt;
+&lt;img src="png/3.png" width="37%" height="25%"&gt;
+&lt;img src="png/4.png" width="37%" height="25%"&gt;
+&lt;img src="png/5_noseleccion.png" width="37%" height="25%"&gt;
+
+---
+## FEMTO PHM 2012 (Resultados)
+Para la competencia PHM 2012 **Nectoux, Gouriveau, Medjaher, et al. (2012)** se solicita usar una métrica que penaliza más los pronósticos tardíos
+
+
+`$$\%Er_i = 100*\frac{ActRUL_{i}-\hat{RUL}}{ActRUL_i}$$`
+
+y la penalización se realiza con la siguiente función
+
+
+$$
+   A_{i} = 
+   \begin{cases}
+       e^{-ln(0.5)(Er_i/0.5)} &amp; \text{si `\(Er_i \leq 0\)`}\\
+       e^{+ln(0.5)(Er_i/20)} &amp; \text{si `\(Er_i \geq 0\)`}\\
+  \end{cases}
+$$
+
+- Sin seleccionar modelo en base a datos de señal: `\(A_i ~ 0.10-0.15\)`
+- Seleccionando modelo en base a DTW o HMM : `\(A_i ~ 0.20-0.25\)`
+- Ganador de la competencia Sutrisino **Sutrisno, Oh, Vasan, and Pecht (2012)**: `\(0.3066\)`
+
+
+---
+## NASA Bearings IMS (Análisis Exploratorio)
+
+&lt;iframe src="htmls/entropia_time.html" width="49%" height="360"&gt;&lt;/iframe&gt; 
+&lt;iframe src="htmls/chunk1_fft.html" width="49%" height="360"&gt; &lt;/iframe&gt;
+
+&lt;iframe src="htmls/energia_wavelet_nodo0.html" width="99%" height="300"&gt;&lt;/iframe&gt;
+
+---
+## NASA Bearings (Metodologías )
+Se está desarrollando y buscando la metodología adecuada, 
+
+- Obtener características, Selección de Variables importantes, Usar cada señal por separado, Seleccionar mejor modelo según ajuste de señal de prueba.
+- Usar método MoG-HMM como se propone en **Tobon-Mejia, Medjaher, Zerhouni, et al. (2012)**
+- (Pendiente) Aumentar características agregando como predictor la clasificación del estado de la maquina (bueno,transición)
+
+
+---
+## NASA Bearings (Resultados)
+Aún se está en desarrollo por lo cual aún no se tiene resultados concluyentes para este experimentos, a excepción de pruebas de validación.
+
+---
+## Contribuciones
+
+- Existen estudios previos que muestran que es posible realizar la detección de anomalías con el sensor, por ejemplo: es posible detectar las fallas de bombas y cálculo de RUL con los datos de acelerómetros, en este estudio proponemos combinación de sensores (acelerómetro, voltaje y corriente) para mejorar la precisión del resultado del modelo de pronóstico.
+
+- Algoritmo corriendo durante la generación de los datos.
+
+
+---
+## Conclusión y Trabajo Futuro
+
+- Se comparó métodos base o clásicos contra métodos de boosting para comprobar la diferencia en desempeño.
+
+- Se vio que es posible aumentar la exactitud de las predicciones de clasificación, usando características Wavelets.
+
+- Para la parte de Predicción de tiempo o ciclos de vida restante útil, se ha probado varias metodologías y aun se esta realizando desarrollo y pruebas de otra metodología.
+
+- En cuanto al documento formal de la tesina se tiene un avance considerable, falta agregar parte de los resultados que se tienen más los que faltan, y agregar un capítulo de teoría.
+
+---
+## Bibliografía
+
+Friedman, J, T. Hastie and R. Tibshirani (2001). _The elements of
+statistical learning_. Vol. 1. 10. Springer series in statistics
+New York.
+
+James, G, D. Witten, T. Hastie, et al. (2013). _An introduction to
+statistical learning_. Vol. 112. Springer.
+
+Lee, J., H. Qiu, G. Yu, et al. (2009). _Rexnord Technical Services
+(2007).'Bearing Data Set', IMS, University of Cincinnati. NASA
+Ames Prognostics Data Repository_.
+
+Nectoux, P., R. Gouriveau, K. Medjaher, et al. (2012). "PRONOSTIA:
+An experimental platform for bearings accelerated degradation
+tests." In: _IEEE International Conference on Prognostics and
+Health Management, PHM'12._ IEEE Catalog Number: CPF12PHM-CDR. ,
+pp. 1-8.
+
+Saxena, A., J. Celaya, E. Balaban, et al. (2008). "Metrics for
+evaluating performance of prognostic techniques". In: _2008
+International Conference on Prognostics and Health Management_.
+IEEE. , pp. 1-17.
+
+---
+## Bibliografía
+
+Sutrisno, E., H. Oh, A. S. S. Vasan, et al. (2012). "Estimation of
+remaining useful life of ball bearings using data driven
+methodologies". In: _2012 IEEE Conference on Prognostics and
+Health Management_. IEEE. , pp. 1-7.
+
+Tobon-Mejia, D. A., K. Medjaher, N. Zerhouni, et al. (2011).
+"Hidden Markov models for failure diagnostic and prognostic". In:
+_2011 Prognostics and System Health Managment Confernece_. IEEE. ,
+pp. 1-8.
+
+Tobon-Mejia, D. A, K. Medjaher, N. Zerhouni, et al. (2012). "A
+data-driven failure prognostics method based on mixture of
+Gaussians hidden Markov models". In: _IEEE Transactions on
+reliability_ 61.2, pp. 491-503.
+
+Verma, N, R. Sevakula, S. Dixit, et al. (2015). "Data driven
+approach for drill bit monitoring". In: _IEEE Reliab. Mag_, pp.
+19-26.
+
+Wu, Q, Y. Feng and B. Huang (2016). "RUL Prediction of Bearings
+Based on Mixture of Gaussians Bayesian Belief Network and Support
+Vector Data Description". In: _Theory, Methodology, Tools and
+Applications for Modeling and Simulation of Complex Systems_.
+Springer, pp. 118-130.
+
+&lt;!-- Ejemplos codigo --&gt;
+&lt;!-- .pull-left[ --&gt;
+&lt;!-- &lt;img src="http://phdcomics.com/comics/archive/phd101212s.gif" width=300 height=400&gt; --&gt;
+&lt;!-- ] --&gt;
+
+&lt;!-- .pull-right[ --&gt;
+&lt;!-- &lt;img src="http://phdcomics.com/comics/archive/phd052810s.gif" width=300 height=242&gt; --&gt;
+&lt;!-- ] --&gt;
+
+&lt;!-- Util para sacar colores https://community.linuxmint.com/software/view/gpick --&gt;
+
+
+&lt;!-- knitr::kable(matrix(rnorm(120),ncol = 12,nrow =10 ),format="latex") --&gt;
+ &lt;!-- Render equations in SVG --&gt;
+ 
+&lt;!--  --- --&gt;
+&lt;!-- class: title-slide --&gt;
+&lt;!-- background-image: url("assets/logocimat.png") --&gt;
+&lt;!-- background-position: 10% 90%, 100% 50% --&gt;
+&lt;!-- background-size: 160px, 100% 100% --&gt;
+
+&lt;!-- # .black[Manual title slide] --&gt;
+
+&lt;!-- ## Subtitle --&gt;
+
+&lt;!-- ### Author --&gt;
+
+&lt;!-- ### Date --&gt;
+
+&lt;!-- Generar tablas markdown https://www.tablesgenerator.com/markdown_tables --&gt;
+
+&lt;!-- - (Tobon-Mejia, Medjaher, Zerhouni, et al., 2012) --&gt;
+
+&lt;!-- --- --&gt;
+&lt;!-- ## Video  --&gt;
+
+&lt;!-- &lt;video src="/home/adrianrdzv/Escritorio/CIMAT/TESINA/protocolo_entrega/videos/Experimentacion_drill.mp4"&gt;[alt]&lt;/video&gt; --&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="assets/remark-zoom.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"navigation": {
+"scroll": false
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
