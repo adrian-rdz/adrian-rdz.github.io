@@ -17,8 +17,4 @@ Se puede ver en linea ya que es un html y esta hosteado aqui mismo en github.
 
 
 
-aqui el link: [Presentacion de Tesina 2da ]([https://adrian-rdz.github.io/presentacion_tesina/](https://adrian-rdz.github.io/presentacion_tesina/))
-
-
-
-
+aqui el link: [https://adrian-rdz.github.io/presentacion_tesina/](https://adrian-rdz.github.io/presentacion_tesina/#1)
