@@ -1,6 +1,6 @@
 ---
 author: Adrián Rodríguez
-date: 2019-01-15
+date: 2019-05-12
 title: Presentación de Avances de Tesina
 tags: [manteniminento_predicitivo,industria4,rul,tesina]
 ---
