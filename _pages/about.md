@@ -9,4 +9,4 @@ IPC, entre otras herramientas relacionadas) , y soy Licenciado en Ciencias Compu
 
 Mis intereses son tanto en el area de computo como en la parte estadística, me gusta frecuentemente aprender nuevos conceptos y tecnologías.
 
-Puedes visualizar mi CV completo aqui : [CV en pdf ](https://github.com/adrian-rdz/adrian-rdz.github.io/raw/master/images/Adrian_CV_jul_2019.pdf)
+Puedes visualizar mi CV completo aqui : <a href="https://github.com/adrian-rdz/adrian-rdz.github.io/raw/master/images/Adrian_CV_jul_2019.pdf" target="_blank"> CV en pdf</a>
