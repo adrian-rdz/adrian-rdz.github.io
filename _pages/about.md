@@ -8,3 +8,5 @@ años como consultor de sistemas en el area de ETL (Extracción Transformación 
 IPC, entre otras herramientas relacionadas) , y soy Licenciado en Ciencias Computacionales egresado de la Facultad de Ciencias Físico Matemáticas (FCFM UANL)
 
 Mis intereses son tanto en el area de computo como en la parte estadística, me gusta frecuentemente aprender nuevos conceptos y tecnologías.
+
+Puedes visualizar mi CV completo aqui : [CV en pdf ](https://github.com/adrian-rdz/adrian-rdz.github.io/raw/master/images/Adrian_CV_jul_2019.pdf)
